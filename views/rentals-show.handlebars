@@ -1,0 +1,43 @@
+<!-- views/rides-show.handlebars -->
+<div class="nice-buttons">
+    <h1>{{rental.neighborhood}}</h1>
+    <h2>{{rental.type}}</h2>
+    <p>${{rental.price}}</p>
+    <p>{{rental.zip}}</p>
+    <p>{{rental.amenities}}</p>
+
+
+</div>
+
+    <div class="buttons">
+
+    <p>
+        <form method="GET" action="/rentals/view/{{rental._id}}/edit">
+            <button type="submit" class="btn btn-primary btn-sm">Edit</button>
+        </form>
+    </p>
+
+    <!--Delete Button-->
+    <p>
+        <form method="POST" action="/rentals/view/{{rental._id}}?_method=DELETE">
+            <button type="submit" class="btn btn-primary btn-sm">Delete</button>
+        </form>
+    </p>
+
+    <p>
+        <form class="" action="/rentals/apply/{{rental._id}}" method="GET">
+          <button type="submit" class="btn btn-primary btn-sm" name="button">Apply</button>
+        </form>
+    </p>
+
+      <div>
+
+
+
+<style>
+    .nice-buttons {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+</style>

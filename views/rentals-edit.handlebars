@@ -1,0 +1,13 @@
+
+<!-- views/rides-edit.handlebars -->
+
+<form method="POST" action="/rentals/view/{{rental._id}}?_method=PUT">
+    {{> rentals-form}}
+    <!-- BUTTON -->
+    <p>
+        <button type="submit" class="btn btn-primary btn-sm">Save Rental</button>
+    </p>
+</form>
+<form method="GET" action="/">
+    <button type="cancel" class="btn btn-primary btn-sm">Cancel</button>
+ </form>

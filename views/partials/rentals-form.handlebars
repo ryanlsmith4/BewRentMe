@@ -1,0 +1,32 @@
+<!--views/partials/blog-form.handlebars-->
+
+<fieldset class="container">
+  <legend>Edit Rental Listing</legend>
+
+  <p>
+    <label for="rental-description">Neighborhood</label><br>
+    <textarea id="rental-description" name="neighborhood" rows="1" />{{rental.neighborhood}}</textarea>
+  </p>
+  <!-- TITLE -->
+  <p>
+    <label for="rental-title">Zip</label><br>
+    <input id="rental-route" type="text" name="zip" value="{{rental.zip}}"/>
+  </p>
+
+  <!-- Article TITLE -->
+  <p>
+    <label for="article-title">Type</label><br>
+    <input id="rental-time" type="text" name="type" value="{{rental.type}}" />
+  </p>
+
+  <!-- DESCRIPTION -->
+  <p>
+    <label for="rental-description">Amenities</label><br>
+    <textarea id="rental-description" name="amenities" rows="10" />{{rental.amenities}}</textarea>
+  </p>
+
+  <p>
+    <label for="rental-description">Price</label><br>
+    <textarea id="rental-description" name="price" rows="1" />{{rental.price}}</textarea>
+  </p>
+</fieldset>

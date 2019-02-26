@@ -1,0 +1,31 @@
+<fieldset class="container">
+  <legend>Application Form</legend>
+
+
+  <p>
+    <label for="">Applicants Name</label><br>
+    <input id="rental-description" name="neighborhood" /></input>
+  </p>
+
+  <p>
+    <label for="rental-title">Last 4 of Social Security</label><br>
+    <input id="rental-route" type="text" name="zip" value="" />
+  </p>
+
+  <label>All App Fees $50</label>
+
+  <p>
+    <!-- /rentals/apply/:id/purchase -->
+    <form action='/rentals/apply/{{rental.id}}/purchase' method="POST">
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key={{ PUBLIC_STRIPE_API_KEY }}
+      data-amount="5000"
+      data-name="RentMe"
+      data-description="Widget"
+      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+      data-locale="auto"
+      data-zip-code="true">
+    </script>
+  </form></p>
+</fieldset>
